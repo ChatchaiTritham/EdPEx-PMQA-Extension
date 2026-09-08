@@ -1,0 +1,65 @@
+# PMQA-2562 Extension Artifact
+
+Reproducibility artifact for the paper *"Framework-Agnostic Extensibility of a
+Schema-as-Data Quality-Assessment Platform: An Empirical Extension Study from
+EdPEx to PMQA-2562"* (submitted to PeerJ Computer Science).
+
+This is a **focused extract** of the relevant files from the authors' larger
+institutional EdPEx information system (utkic), containing exactly the files
+needed to verify this paper's claims — not the full production system (which
+contains unrelated subsystems: admissions, alumni, MOOC, procurement, etc.,
+not discussed in this paper).
+
+## What this demonstrates
+
+`app/scoring.php` is the shared ADLI/LeTCI scoring engine, used unmodified by
+both EdPEx (`config/edpex.json`) and the PMQA-2562 extension
+(`config/pmqa.json`) added for this paper. `app/aunqa.php` +
+`schema/008_aunqa.sql` is the contrasting AUN-QA case, which required a
+dedicated module rather than configuration alone.
+
+## Files
+
+```
+app/scoring.php          — the ADLI/LeTCI scoring engine (0 lines changed to add PMQA-2562)
+app/aunqa.php             — the AUN-QA integration module (contrasting, module-based case)
+config/edpex.json         — EdPEx rubric configuration
+config/pmqa.json          — PMQA-2562 rubric configuration (new, config-only)
+schema/008_aunqa.sql       — AUN-QA schema migration (new tables required)
+schema/156_pmqa.sql        — PMQA-2562 schema migration (framework_code registration only)
+tests/bootstrap.php        — PHPUnit bootstrap (requires ../config/config.php, not included — see below)
+tests/Scoring/ScoringTest.php  — 6 tests for the EdPEx scoring path
+tests/Pmqa/PmqaScoringTest.php — 5 tests for the PMQA-2562 scoring path
+```
+
+## Running the tests
+
+The scoring-*validation* tests are pure-function tests and run without a
+database. The management-by-fact-gate tests in `PmqaScoringTest.php` and
+`ScoringTest.php` query a live MySQL database through the application's
+config loader (`config/config.php`, not included here since it reads
+connection details from environment variables per this project's convention,
+not hardcoded credentials).
+
+To run the full suite yourself:
+1. Provide your own `config/config.php` (or the relevant environment
+   variables — `APP_DB_HOST`, `APP_DB_NAME`, `APP_DB_USER`, `APP_DB_PASS`,
+   see `config/config.example.php`) pointing at a MySQL instance with the
+   `edpex`/`prompti2_arc`-shaped schema (apply `schema/*.sql` in order).
+2. `composer require phpunit/phpunit` (or use a project-wide `composer.json`
+   if you have the full utkic repository).
+3. `vendor/bin/phpunit --bootstrap tests/bootstrap.php tests/Scoring tests/Pmqa`
+
+Expected result at the time of writing: 11 tests, 46 assertions, all passing.
+
+## Provenance
+
+Extracted from the authors' private institutional repository at commit
+`ab9c30e` (PMQA-2562 addition) / `6f79b81` (base test/CI infrastructure).
+The full repository is not yet public; this artifact is provided specifically
+to support review and reproducibility of this paper's claims.
+
+## License
+
+Provided for academic review and reproducibility purposes. Contact the
+corresponding author (chatchai.t@mail.rmutk.ac.th) for reuse terms.

@@ -101,8 +101,12 @@ foreach ($spec['profiles'] as $p) {
                'predicted' => $predictions[$p['id']], 'observed' => $observed,
                'prediction_correct' => $predictions[$p['id']] === $observed];
 }
-$out = ['engine_sha256' => hash_file('sha256', "$root/app/scoring.php"),
-        'predictions_sha256' => hash_file('sha256', __DIR__ . '/predictions.json'),
+// digests of content with line endings normalised to LF, so they do not depend on git's checkout settings
+$lf = static fn(string $f): string => hash('sha256', str_replace("
+", "
+", (string) file_get_contents($f)));
+$out = ['engine_sha256_lf' => $lf("$root/app/scoring.php"),
+        'predictions_sha256_lf' => $lf(__DIR__ . '/predictions.json'),
         'profiles' => $rows,
         'correct' => count(array_filter($rows, static fn($r) => $r['prediction_correct'])), 'total' => count($rows)];
 file_put_contents(__DIR__ . '/observations.json', json_encode($out, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . "\n");

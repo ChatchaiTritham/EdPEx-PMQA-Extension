@@ -1,6 +1,6 @@
 {
-    "engine_sha256": "0dfd1a03d0dc78caf8ca208f5cef496b85e9dd1ffbe1192cf3d29c150cec43d8",
-    "predictions_sha256": "305712a19203bdd786a90dc25c7d89175a15c5c11f5fb89bc8b2970b9a767cf1",
+    "engine_sha256_lf": "0dfd1a03d0dc78caf8ca208f5cef496b85e9dd1ffbe1192cf3d29c150cec43d8",
+    "predictions_sha256_lf": "305712a19203bdd786a90dc25c7d89175a15c5c11f5fb89bc8b2970b9a767cf1",
     "profiles": [
         {
             "id": "EdPEx",

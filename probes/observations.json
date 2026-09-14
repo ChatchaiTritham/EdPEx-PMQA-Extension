@@ -1,0 +1,153 @@
+{
+    "engine_sha256": "0dfd1a03d0dc78caf8ca208f5cef496b85e9dd1ffbe1192cf3d29c150cec43d8",
+    "predictions_sha256": "305712a19203bdd786a90dc25c7d89175a15c5c11f5fb89bc8b2970b9a767cf1",
+    "profiles": [
+        {
+            "id": "EdPEx",
+            "kind": "control (existing)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "PMQA",
+            "kind": "control (existing)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "Award2025",
+            "kind": "real framework (prospective)",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": false,
+                "O3_factors": false
+            },
+            "notes": [
+                "category 1 (results+process): engine assigns ADLI",
+                "results scale: engine offers 6 bands, profile has 4",
+                "results factors (4 factors, 4 levels): top score rejected"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "V1",
+            "kind": "synthetic: eight categories, results last",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [
+                "category 7 (process): engine assigns LeTCI"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "V2",
+            "kind": "synthetic: results category numbered first",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [
+                "category 1 (results): engine assigns ADLI"
+            ],
+            "predicted": "configuration only",
+            "observed": "dedicated module",
+            "prediction_correct": false
+        },
+        {
+            "id": "V3",
+            "kind": "synthetic: points total 600",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "dedicated module",
+            "observed": "configuration only",
+            "prediction_correct": false
+        },
+        {
+            "id": "V4",
+            "kind": "synthetic: two results categories",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [
+                "category 6 (results): engine assigns ADLI"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "V5",
+            "kind": "synthetic: five scoring bands",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": false,
+                "O3_factors": false
+            },
+            "notes": [
+                "process scale: engine offers 6 bands, profile has 5",
+                "process factors (4 factors, 5 levels): top score rejected"
+            ],
+            "predicted": "configuration only",
+            "observed": "dedicated module",
+            "prediction_correct": false
+        },
+        {
+            "id": "V6",
+            "kind": "synthetic: twelve items, different item points (PMQA-like)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V7",
+            "kind": "synthetic: three evaluation factors",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": false
+            },
+            "notes": [
+                "process factors (3 factors, 6 levels): top score rejected"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        }
+    ],
+    "correct": 7,
+    "total": 10
+}

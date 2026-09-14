@@ -1,0 +1,117 @@
+{
+  "post_hoc": true,
+  "profiles": [
+    {
+      "id": "EdPEx",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "configuration only",
+      "observed": "configuration only",
+      "agrees": true
+    },
+    {
+      "id": "PMQA",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "configuration only",
+      "observed": "configuration only",
+      "agrees": true
+    },
+    {
+      "id": "Award2025",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": false,
+        "R3_four_factors_six_levels": false
+      },
+      "revised_condition": "dedicated module",
+      "observed": "dedicated module",
+      "agrees": true
+    },
+    {
+      "id": "V1",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "dedicated module",
+      "observed": "dedicated module",
+      "agrees": true
+    },
+    {
+      "id": "V2",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "dedicated module",
+      "observed": "dedicated module",
+      "agrees": true
+    },
+    {
+      "id": "V3",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "configuration only",
+      "observed": "configuration only",
+      "agrees": true
+    },
+    {
+      "id": "V4",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "dedicated module",
+      "observed": "dedicated module",
+      "agrees": true
+    },
+    {
+      "id": "V5",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": false,
+        "R3_four_factors_six_levels": false
+      },
+      "revised_condition": "dedicated module",
+      "observed": "dedicated module",
+      "agrees": true
+    },
+    {
+      "id": "V6",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "revised_condition": "configuration only",
+      "observed": "configuration only",
+      "agrees": true
+    },
+    {
+      "id": "V7",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": false
+      },
+      "revised_condition": "dedicated module",
+      "observed": "dedicated module",
+      "agrees": true
+    }
+  ],
+  "agreements": 10,
+  "total": 10
+}

@@ -102,9 +102,7 @@ foreach ($spec['profiles'] as $p) {
                'prediction_correct' => $predictions[$p['id']] === $observed];
 }
 // digests of content with line endings normalised to LF, so they do not depend on git's checkout settings
-$lf = static fn(string $f): string => hash('sha256', str_replace("
-", "
-", (string) file_get_contents($f)));
+$lf = static fn(string $f): string => hash('sha256', str_replace("\r\n", "\n", (string) file_get_contents($f)));
 $out = ['engine_sha256_lf' => $lf("$root/app/scoring.php"),
         'predictions_sha256_lf' => $lf(__DIR__ . '/predictions.json'),
         'profiles' => $rows,

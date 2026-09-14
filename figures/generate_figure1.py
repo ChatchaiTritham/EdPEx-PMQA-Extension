@@ -78,7 +78,7 @@ def main() -> None:
         BLUE, "#DCE9F5")
     box(xs[1], 43, cw, 18, "PMQA", ["ADLI / LeTCI bands", "config/pmqa.json + schema",
                                          "%d + %d lines" % (n_pmqa, n_pmqa_sql)], GREEN, "#D9EFE8")
-    box(xs[2], 43, cw, 18, "AUN-QA", ["flat five-point scale", "app/aunqa.php + schema",
+    box(xs[2], 43, cw, 18, "AUN-QA", ["one score per criterion", "app/aunqa.php + schema",
                                       "%d + %d lines" % (n_aun, n_aun_sql)], ORANGE, "#F7E2D5")
 
     # the shared engine

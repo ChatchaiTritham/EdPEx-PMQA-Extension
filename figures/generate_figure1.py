@@ -76,7 +76,7 @@ def main() -> None:
     xs = [0, cw + gap, 2 * (cw + gap)]
     box(xs[0], 43, cw, 18, "EdPEx", ["ADLI / LeTCI bands", "config/edpex.json", "%s lines" % f"{n_edpex:,}"],
         BLUE, "#DCE9F5")
-    box(xs[1], 43, cw, 18, "PMQA-2562", ["ADLI / LeTCI bands", "config/pmqa.json + schema",
+    box(xs[1], 43, cw, 18, "PMQA", ["ADLI / LeTCI bands", "config/pmqa.json + schema",
                                          "%d + %d lines" % (n_pmqa, n_pmqa_sql)], GREEN, "#D9EFE8")
     box(xs[2], 43, cw, 18, "AUN-QA", ["flat five-point scale", "app/aunqa.php + schema",
                                       "%d + %d lines" % (n_aun, n_aun_sql)], ORANGE, "#F7E2D5")
@@ -84,7 +84,7 @@ def main() -> None:
     # the shared engine
     box(0, 21, 65, 14, "Generic scoring engine  (app/scoring.php)",
         ["%d lines, keyed on category and scheme code" % n_engine,
-         "0 lines changed for PMQA-2562 (6f79b81 → ab9c30e)"], BLUE, "#EAF1F8")
+         "0 lines changed for PMQA (6f79b81 → ab9c30e)"], BLUE, "#EAF1F8")
 
     arrow((xs[0] + cw / 2, 43), (xs[0] + cw / 2, 35.2), BLUE)
     arrow((xs[1] + cw / 2, 43), (xs[1] + cw / 2, 35.2), GREEN)

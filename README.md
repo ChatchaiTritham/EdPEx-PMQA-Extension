@@ -61,6 +61,22 @@ Extracted from the authors' private institutional repository at commit
 The full repository is not yet public; this artifact is provided specifically
 to support review and reproducibility of this paper's claims.
 
+## Prospective test of the structural condition (`probes/`, v1.3)
+
+No database or institutional data are used.
+
+1. `probes/profiles.json` - ten structural profiles: EdPEx and PMQA (controls), the 2025 Baldrige Award
+   Criteria (transcribed from the official NIST document; URL and SHA-256 recorded in the file) and seven
+   synthetic variants of EdPEx, each changing one structural property.
+2. `python probes/predict.py` - applies the condition of the article's extension protocol clause by clause
+   and writes `probes/predictions.json`. These predictions were committed and pushed (commit `470213e`)
+   before any observation.
+3. `php probes/observe.php` - runs the unmodified `app/scoring.php` (database reads replaced by fixed
+   in-memory values) against each profile and writes `probes/observations.json` (commit `02cbe4b`).
+   Result: 7 of 10 predictions correct.
+4. `python probes/refine.py` - post hoc check of the revised condition described in the article
+   (`probes/refined.json`, 10 of 10 consistent; a consistency check, not a test).
+
 ## License
 
 Provided for academic review and reproducibility purposes. Contact the

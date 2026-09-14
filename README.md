@@ -1,8 +1,10 @@
-# PMQA-2562 Extension Artifact
+# PMQA Extension Artifact
+
+PMQA here is the Thai Public Sector Management Quality Award criteria, 2019 (B.E. 2562) edition, adapted by the Office of the Public Sector Development Commission from the Malcolm Baldrige National Quality Award.
 
 Reproducibility artifact for the paper *"Framework-Agnostic Extensibility of a
 Schema-as-Data Quality-Assessment Platform: An Empirical Extension Study from
-EdPEx to PMQA-2562"* (submitted to PeerJ Computer Science).
+EdPEx to PMQA"* (submitted to PeerJ Computer Science).
 
 This is a **focused extract** of the relevant files from the authors' larger
 institutional EdPEx information system (utkic), containing exactly the files
@@ -13,7 +15,7 @@ not discussed in this paper).
 ## What this demonstrates
 
 `app/scoring.php` is the shared ADLI/LeTCI scoring engine, used unmodified by
-both EdPEx (`config/edpex.json`) and the PMQA-2562 extension
+both EdPEx (`config/edpex.json`) and the PMQA extension
 (`config/pmqa.json`) added for this paper. `app/aunqa.php` +
 `schema/008_aunqa.sql` is the contrasting AUN-QA case, which required a
 dedicated module rather than configuration alone.
@@ -21,15 +23,15 @@ dedicated module rather than configuration alone.
 ## Files
 
 ```
-app/scoring.php          — the ADLI/LeTCI scoring engine (0 lines changed to add PMQA-2562)
+app/scoring.php          — the ADLI/LeTCI scoring engine (0 lines changed to add PMQA)
 app/aunqa.php             — the AUN-QA integration module (contrasting, module-based case)
 config/edpex.json         — EdPEx rubric configuration
-config/pmqa.json          — PMQA-2562 rubric configuration (new, config-only)
+config/pmqa.json          — PMQA rubric configuration (new, config-only)
 schema/008_aunqa.sql       — AUN-QA schema migration (new tables required)
-schema/156_pmqa.sql        — PMQA-2562 schema migration (framework_code registration only)
+schema/156_pmqa.sql        — PMQA schema migration (framework_code registration only)
 tests/bootstrap.php        — PHPUnit bootstrap (requires ../config/config.php, not included — see below)
 tests/Scoring/ScoringTest.php  — 6 tests for the EdPEx scoring path
-tests/Pmqa/PmqaScoringTest.php — 5 tests for the PMQA-2562 scoring path
+tests/Pmqa/PmqaScoringTest.php — 5 tests for the PMQA scoring path
 ```
 
 ## Running the tests
@@ -55,7 +57,7 @@ Expected result at the time of writing: 11 tests, 46 assertions, all passing.
 ## Provenance
 
 Extracted from the authors' private institutional repository at commit
-`ab9c30e` (PMQA-2562 addition) / `6f79b81` (base test/CI infrastructure).
+`ab9c30e` (PMQA addition) / `6f79b81` (base test/CI infrastructure).
 The full repository is not yet public; this artifact is provided specifically
 to support review and reproducibility of this paper's claims.
 

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "EdPEx",
+    "kind": "control (existing)",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "PMQA",
+    "kind": "control (existing)",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "Award2025",
+    "kind": "real framework (prospective)",
+    "clauses": {
+      "seven_categories": false,
+      "one_results_category": false,
+      "points_total_1000": false,
+      "adli_letci_evaluation": false
+    },
+    "predicted": "dedicated module"
+  },
+  {
+    "id": "V1",
+    "kind": "synthetic: eight categories, results last",
+    "clauses": {
+      "seven_categories": false,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "dedicated module"
+  },
+  {
+    "id": "V2",
+    "kind": "synthetic: results category numbered first",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V3",
+    "kind": "synthetic: points total 600",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": false,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "dedicated module"
+  },
+  {
+    "id": "V4",
+    "kind": "synthetic: two results categories",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": false,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "dedicated module"
+  },
+  {
+    "id": "V5",
+    "kind": "synthetic: five scoring bands",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V6",
+    "kind": "synthetic: twelve items, different item points (PMQA-like)",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V7",
+    "kind": "synthetic: three evaluation factors",
+    "clauses": {
+      "seven_categories": true,
+      "one_results_category": true,
+      "points_total_1000": true,
+      "adli_letci_evaluation": false
+    },
+    "predicted": "dedicated module"
+  }
+]

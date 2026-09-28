@@ -1,0 +1,46 @@
+{
+  "written_utc": "2026-09-28T14:57:00Z",
+  "condition": "revised condition from refine.py (R1, R2, R3), applied unchanged",
+  "predictions": [
+    {
+      "id": "TQA",
+      "kind": "external framework (national award, Baldrige-derived)",
+      "clauses": {
+        "R1_results_is_category_7": true,
+        "R2_edpex_bands": true,
+        "R3_four_factors_six_levels": true
+      },
+      "predicted": "configuration only"
+    },
+    {
+      "id": "EFQM2025",
+      "kind": "external framework (European excellence model)",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": false,
+        "R3_four_factors_six_levels": false
+      },
+      "predicted": "dedicated module"
+    },
+    {
+      "id": "CAF2020",
+      "kind": "external framework (European public-sector model)",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": false,
+        "R3_four_factors_six_levels": true
+      },
+      "predicted": "dedicated module"
+    },
+    {
+      "id": "AUNQA",
+      "kind": "external framework (held-out case with a known outcome)",
+      "clauses": {
+        "R1_results_is_category_7": false,
+        "R2_edpex_bands": false,
+        "R3_four_factors_six_levels": false
+      },
+      "predicted": "dedicated module"
+    }
+  ]
+}

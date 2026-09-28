@@ -1,0 +1,72 @@
+{
+    "round": 2,
+    "engine_sha256_lf": "0dfd1a03d0dc78caf8ca208f5cef496b85e9dd1ffbe1192cf3d29c150cec43d8",
+    "predictions_sha256_lf": "81b6da36a1e412177afcb299190ab08bb2de9016dc1fcb86729fea13c3d6fed4",
+    "profiles": [
+        {
+            "id": "TQA",
+            "kind": "external framework (national award, Baldrige-derived)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "EFQM2025",
+            "kind": "external framework (European excellence model)",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": false,
+                "O3_factors": false
+            },
+            "notes": [
+                "process scale: engine offers 6 bands, profile has 5",
+                "process factors (7 factors, 5 levels): top score rejected, weak factor rejected",
+                "category 6 (results): engine assigns ADLI"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "CAF2020",
+            "kind": "external framework (European public-sector model)",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": false,
+                "O3_factors": true
+            },
+            "notes": [
+                "process scale: engine offers 6 bands, profile has 6",
+                "category 6 (results): engine assigns ADLI"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "AUNQA",
+            "kind": "external framework (held-out case with a known outcome)",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": false,
+                "O3_factors": false
+            },
+            "notes": [
+                "process scale: engine offers 6 bands, profile has 7",
+                "process factors (1 factors, 7 levels): top score rejected, weak factor rejected",
+                "category 7 (process): engine assigns LeTCI"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        }
+    ],
+    "correct": 4,
+    "total": 4
+}

@@ -1,0 +1,59 @@
+{
+  "_note": "Round 2 of the prospective test. Every profile here is a framework defined by an outside body, not by the authors, so the structures are transcribed from the sources listed below rather than designed for this study. AUN-QA is included as a held-out case whose outcome is already known from the platform's history (it required a dedicated module), so it checks the revised condition against an observation made before this round. The TQA band scale is an explicit assumption, recorded in 'assumptions'.",
+  "sources": {
+    "TQA": {
+      "title": "Thailand Quality Award criteria, scoring system (categories 1-6 assessed with ADLI, category 7 with LeTCI)",
+      "url": "https://www.tqa.or.th/th/tqa-criteria/",
+      "consulted": "2026-09-28"
+    },
+    "EFQM2025": {
+      "title": "The EFQM Model 2025 (three directions; seven criteria; RADAR assessment logic)",
+      "url": "https://shop.efqm.org/publications/the-efqm-model-2025/",
+      "consulted": "2026-09-28"
+    },
+    "CAF2020": {
+      "title": "CAF 2020: the European model for improving public organisations through self-assessment (nine criteria: five enablers, four results; PDCA-based scoring panels)",
+      "url": "https://www.eipa.eu/wp-content/uploads/2023/02/CAF_2020_English.pdf",
+      "consulted": "2026-09-28"
+    },
+    "AUNQA": {
+      "title": "ASEAN University Network Quality Assurance, programme-level criteria (eight criteria rated on a seven-point scale)",
+      "url": "https://www.aunsec.org/our-work/quality-assurance",
+      "consulted": "2026-09-28"
+    }
+  },
+  "assumptions": {
+    "TQA": "The consulted TQA pages state the seven categories and the ADLI/LeTCI factors but not the percentage bands. The profile assumes the six EdPEx bands, because EdPEx is the Thai education adaptation of TQA. The prediction for TQA is therefore conditional on that assumption; if the current TQA scoring book uses a different band set, the prediction changes to a dedicated module."
+  },
+  "edpex_scale": "inherited",
+  "profiles": [
+    {
+      "id": "TQA",
+      "kind": "external framework (national award, Baldrige-derived)",
+      "categories": [[1, "process", 120], [2, "process", 85], [3, "process", 85], [4, "process", 90], [5, "process", 85], [6, "process", 85], [7, "results", 450]],
+      "process": {"factors": ["Approach", "Deployment", "Learning", "Integration"], "levels": 6, "scale": "edpex"},
+      "results": {"factors": ["Level", "Trend", "Comparison", "Integration"], "levels": 6, "scale": "edpex"}
+    },
+    {
+      "id": "EFQM2025",
+      "kind": "external framework (European excellence model)",
+      "categories": [[1, "process", 0], [2, "process", 0], [3, "process", 0], [4, "process", 0], [5, "process", 0], [6, "results", 0], [7, "results", 0]],
+      "process": {"factors": ["Soundness", "Integrated", "Implemented", "Structured", "Measurement", "Learning and creativity", "Improvement and innovation"], "levels": 5, "scale": [[0, 25], [26, 50], [51, 75], [76, 100], [100, 100]]},
+      "results": {"factors": ["Scope and relevance", "Integrity", "Segmentation", "Trends", "Targets", "Comparisons", "Confidence"], "levels": 5, "scale": [[0, 25], [26, 50], [51, 75], [76, 100], [100, 100]]}
+    },
+    {
+      "id": "CAF2020",
+      "kind": "external framework (European public-sector model)",
+      "categories": [[1, "process", 0], [2, "process", 0], [3, "process", 0], [4, "process", 0], [5, "process", 0], [6, "results", 0], [7, "results", 0], [8, "results", 0], [9, "results", 0]],
+      "process": {"factors": ["Plan", "Do", "Check", "Act"], "levels": 6, "scale": [[0, 10], [11, 30], [31, 50], [51, 70], [71, 90], [91, 100]]},
+      "results": {"factors": ["Trends", "Targets", "Comparisons", "Coverage"], "levels": 6, "scale": [[0, 10], [11, 30], [31, 50], [51, 70], [71, 90], [91, 100]]}
+    },
+    {
+      "id": "AUNQA",
+      "kind": "external framework (held-out case with a known outcome)",
+      "categories": [[1, "process", 0], [2, "process", 0], [3, "process", 0], [4, "process", 0], [5, "process", 0], [6, "process", 0], [7, "process", 0], [8, "results", 0]],
+      "process": {"factors": ["Criterion rating"], "levels": 7, "scale": [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7]]},
+      "results": {"factors": ["Criterion rating"], "levels": 7, "scale": [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7]]}
+    }
+  ]
+}

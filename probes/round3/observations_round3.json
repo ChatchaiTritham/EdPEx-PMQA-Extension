@@ -1,0 +1,222 @@
+{
+    "engine_v2_sha256_lf": "519ad4b03c1bccb60a3968daddbf10fc1ec4fb50721ef02118af91d44c68d1a8",
+    "engine_v1_sha256_lf": "0dfd1a03d0dc78caf8ca208f5cef496b85e9dd1ffbe1192cf3d29c150cec43d8",
+    "predictions_sha256_lf": "fdde667fa1255816c9288290e0dc39064180bc30e8f3139e0346e836079a6673",
+    "profiles": [
+        {
+            "id": "EdPEx",
+            "kind": "control (existing)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "PMQA",
+            "kind": "control (existing)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "Award2025",
+            "kind": "real framework (prospective)",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": true,
+                "O3_factors": false
+            },
+            "notes": [
+                "category 1 (results+process): engine assigns one scheme (results)",
+                "process factors (1 factors, 3 levels, 3 bands): top score rejected, weak rejected"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "V1",
+            "kind": "synthetic: eight categories, results last",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V2",
+            "kind": "synthetic: results category numbered first",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V3",
+            "kind": "synthetic: points total 600",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V4",
+            "kind": "synthetic: two results categories",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V5",
+            "kind": "synthetic: five scoring bands",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V6",
+            "kind": "synthetic: twelve items, different item points (PMQA-like)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V7",
+            "kind": "synthetic: three evaluation factors",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "TQA",
+            "kind": "external framework (national award, Baldrige-derived)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "EFQM2025",
+            "kind": "external framework (European excellence model)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "CAF2020",
+            "kind": "external framework (European public-sector model)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "AUNQA",
+            "kind": "external framework (held-out case with a known outcome)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "PMQA40",
+            "kind": "real framework (round 3)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "V8",
+            "kind": "synthetic variant (round 3)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": false
+            },
+            "notes": [
+                "process factors (4 factors, 4 levels, 6 bands): top score rejected, weak rejected"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        }
+    ],
+    "correct": 16,
+    "total": 16
+}

@@ -81,3 +81,18 @@ No database or institutional data are used.
 
 Provided for academic review and reproducibility purposes. Contact the
 corresponding author (chatchai.t@mail.rmutk.ac.th) for reuse terms.
+
+## Round 3: moving the variability boundary (tag v1.5.0)
+
+`probes/round3/SPEC.md` specifies a redesign that makes configurable exactly what the revised condition
+C1 found fixed in code (scheme per category, bands and values per scheme, factor count and levels), keeps
+every other rule (including the band rule as it stood at the studied commits), and states condition C2
+for the redesigned engine. Spec, profiles and predictions were pushed as commit `d4bd327` before
+`app/scoring_v2.php` was written.
+
+    python probes/round3/predict_round3.py      # predictions_round3.json (already committed)
+    php probes/round3/observe_round3.php        # observations_round3.json
+
+`app/scoring_v2.php` differs from `app/scoring.php` by 29 added and 6 removed lines
+(`git diff --no-index --numstat app/scoring.php app/scoring_v2.php`). With no framework definition supplied
+it behaves as v1.

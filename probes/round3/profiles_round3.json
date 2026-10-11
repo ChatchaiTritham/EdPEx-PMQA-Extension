@@ -1,0 +1,25 @@
+{
+  "_note": "Round 3 new profiles. Structure transcribed before scoring_v2.php existed; see SPEC.md.",
+  "sources": {
+    "PMQA40": "Department of Mental Health (Thailand), Manual for assessing the status of government agencies as Bureaucracy 4.0 (PMQA 4.0), fiscal year 2568 (2025), pp. 5, 8, 9; based on OPDC PMQA 4.0 criteria, revised 2567 (2024). OCR of the cited pages in pmqa40_ocr_pages.txt."
+  },
+  "assumptions": {
+    "PMQA40": "Item rating is one of three level values (300, 400, 500) per p. 9; no rating below Basic is defined in the cited pages, so none is modelled. AD-R guides how answers are written (p. 8) and is not a separately rated factor vector, so each item carries one rating."
+  },
+  "profiles": [
+    {
+      "id": "PMQA40",
+      "kind": "real framework (round 3)",
+      "categories": [[1, "process", null], [2, "process", null], [3, "process", null], [4, "process", null], [5, "process", null], [6, "process", null], [7, "results", null]],
+      "process": {"factors": ["Level (judged on Approach, Deployment, Result)"], "levels": 3, "scale": [[300], [400], [500]]},
+      "results": {"factors": ["Level (judged on Approach, Deployment, Result)"], "levels": 3, "scale": [[300], [400], [500]]}
+    },
+    {
+      "id": "V8",
+      "kind": "synthetic variant (round 3)",
+      "categories": [[1, "process", 115], [2, "process", 90], [3, "process", 85], [4, "process", 90], [5, "process", 85], [6, "process", 85], [7, "results", 450]],
+      "process": {"factors": ["Approach", "Deployment", "Learning", "Integration"], "levels": 4, "scale": "edpex"},
+      "results": {"factors": ["Levels", "Trends", "Comparisons", "Integration"], "levels": 4, "scale": "edpex"}
+    }
+  ]
+}

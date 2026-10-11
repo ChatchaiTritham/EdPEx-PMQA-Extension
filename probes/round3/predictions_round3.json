@@ -1,0 +1,162 @@
+[
+  {
+    "id": "EdPEx",
+    "kind": "control (existing)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "PMQA",
+    "kind": "control (existing)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "Award2025",
+    "kind": "real framework (prospective)",
+    "clauses": {
+      "C2a_one_rubric_per_category": false,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "dedicated module"
+  },
+  {
+    "id": "V1",
+    "kind": "synthetic: eight categories, results last",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V2",
+    "kind": "synthetic: results category numbered first",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V3",
+    "kind": "synthetic: points total 600",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V4",
+    "kind": "synthetic: two results categories",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V5",
+    "kind": "synthetic: five scoring bands",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V6",
+    "kind": "synthetic: twelve items, different item points (PMQA-like)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V7",
+    "kind": "synthetic: three evaluation factors",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "TQA",
+    "kind": "external framework (national award, Baldrige-derived)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "EFQM2025",
+    "kind": "external framework (European excellence model)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "CAF2020",
+    "kind": "external framework (European public-sector model)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "AUNQA",
+    "kind": "external framework (held-out case with a known outcome)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "PMQA40",
+    "kind": "real framework (round 3)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": true
+    },
+    "predicted": "configuration only"
+  },
+  {
+    "id": "V8",
+    "kind": "synthetic variant (round 3)",
+    "clauses": {
+      "C2a_one_rubric_per_category": true,
+      "C2b_finite_integer_bands": true,
+      "C2c_bands_not_above_levels": false
+    },
+    "predicted": "dedicated module"
+  }
+]

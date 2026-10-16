@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "EdPEx-PMQA-Extension: criteria-engine artefact and prospective probes"
+authors:
+  - family-names: Tritham
+    given-names: Chatchai
+    email: chatchai.t@mail.rmutk.ac.th
+version: 1.5.1
+date-released: 2026-10-16
+license: MIT
+repository-code: "https://github.com/ChatchaiTritham/EdPEx-PMQA-Extension"
